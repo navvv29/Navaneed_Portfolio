@@ -122,7 +122,7 @@ export const HeroSection: React.FC = () => {
         <FadeIn delay={0.9} y={20} duration={0.7}>
           <div className="text-center max-w-[600px] mx-auto space-y-4">
             <p className="text-[var(--text-muted)] font-light leading-relaxed font-space text-base md:text-lg">
-              Pre-final year B.Tech AI & DS student at APJ Abdul Kalam Technological University. I build LLM pipelines, agentic AI systems, and production ML applications — and I do it end-to-end.
+              Pre-final year B.Tech AI & DS student at APJ Abdul Kalam Technological University. I build LLM pipelines, agentic AI systems, and production ML applications and I do it end-to-end.
             </p>
             <div className="inline-block mt-2">
               <span className="bg-[rgba(45,212,191,0.1)] border border-[rgba(45,212,191,0.3)] text-[var(--accent)] px-4 py-2 rounded-full font-mono text-sm shadow-[0_0_15px_rgba(45,212,191,0.15)] animate-pulse inline-flex whitespace-normal max-w-full text-center leading-relaxed">

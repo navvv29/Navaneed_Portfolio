@@ -24,7 +24,7 @@ const awards: Award[] = [
   },
   {
     id: 2,
-    name: 'Python Quiz Challenge',
+    name: 'NeuraX Python Quiz Challenge- SIMAT',
     detail: '1st Prize',
     year: 2025,
   },
