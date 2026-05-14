@@ -85,7 +85,7 @@ export const ContactSection: React.FC = () => {
               <span>Malappuram, Kerala, India</span>
             </div>
             <p className="text-[var(--text-muted)] text-xs">
-              Available for remote work worldwide.
+              Available for remote work worldwide, and willing to relocate for internships.
             </p>
           </div>
         </FadeIn>
