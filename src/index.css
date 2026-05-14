@@ -56,7 +56,7 @@ body::before {
   font-size: 0.75rem;
   color: var(--accent);
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 /* Scrollbar styling */
