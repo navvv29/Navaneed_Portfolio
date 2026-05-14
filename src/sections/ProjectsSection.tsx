@@ -6,7 +6,7 @@ interface Project {
   id: number;
   name: string;
   year: number;
-  type: 'Hackathon' | 'Personal' | 'Client';
+  type: 'Hackathon' | 'Personal' | 'Client' | 'Academic';
   tech: string[];
   description: string[];
   live?: string;
@@ -53,7 +53,7 @@ const projects: Project[] = [
     id: 4,
     name: 'LumiCity AI',
     year: 2026,
-    type: 'Personal',
+    type: 'Academic',
     tech: ['Python', 'YOLOv8', 'OpenCV', 'Computer Vision', 'Satellite Data'],
     description: [
       'Designed an AI street-light dimming system using real-time pedestrian detection via YOLOv8; demonstrated up to 35% simulated energy savings vs. always-on baseline.',
@@ -94,6 +94,8 @@ export const ProjectsSection: React.FC = () => {
         return 'bg-[rgba(129,140,248,0.1)] text-[var(--accent-2)]';
       case 'Client':
         return 'bg-[rgba(245,158,11,0.1)] text-[var(--accent-3)]';
+      case 'Academic':
+        return 'bg-[rgba(236,72,153,0.1)] text-[var(--accent-3)]'; // Pinkish hue for Academic
       default:
         return 'bg-[rgba(129,140,248,0.1)] text-[var(--accent-2)]';
     }

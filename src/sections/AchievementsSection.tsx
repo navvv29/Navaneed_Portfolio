@@ -28,12 +28,6 @@ const awards: Award[] = [
     detail: '1st Prize',
     year: 2025,
   },
-  {
-    id: 3,
-    name: 'Cepheus Hackathon – Atria University',
-    detail: 'Selected Project',
-    year: 2025,
-  },
 ];
 
 const certifications: Certification[] = [
