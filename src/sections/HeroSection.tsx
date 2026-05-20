@@ -102,17 +102,17 @@ export const HeroSection: React.FC = () => {
         </FadeIn>
 
         {/* Main Heading */}
-        <div className="overflow-hidden">
+        <div className="overflow-hidden flex justify-center w-full">
           <FadeIn delay={0.6} y={40} duration={0.7}>
-            <h1 className="text-[11vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] font-bold leading-none whitespace-nowrap text-[var(--white)] uppercase tracking-tight font-space">
+            <h1 className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] font-bold leading-tight md:leading-none whitespace-normal md:whitespace-nowrap text-center text-[var(--white)] uppercase tracking-tight font-space">
               Navaneed P.
             </h1>
           </FadeIn>
         </div>
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden flex justify-center w-full mt-2 md:mt-0">
           <FadeIn delay={0.75} y={40} duration={0.7}>
-            <h1 className="text-[11vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] font-bold leading-none whitespace-nowrap gradient-heading uppercase tracking-tight font-space">
+            <h1 className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] font-bold leading-tight md:leading-none whitespace-normal md:whitespace-nowrap text-center gradient-heading uppercase tracking-tight font-space">
               AI Engineer
             </h1>
           </FadeIn>

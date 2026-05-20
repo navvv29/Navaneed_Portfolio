@@ -44,8 +44,8 @@ const experiences: Experience[] = [
     company: 'Envirotab Solutions',
     role: 'Research and Development Intern',
     dateRange: 'Jun 2025',
-    location: 'India',
-    type: 'Onsite',
+    location: 'Remote',
+    type: 'Remote',
     dotColor: 'var(--accent-3)',
     bullets: [
       'Contributed to 2 R&D prototypes by reviewing technical literature, implementing findings into experiments, and producing structured reports for senior researchers.',

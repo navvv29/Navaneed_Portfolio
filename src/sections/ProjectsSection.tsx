@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { FadeIn } from '../components/FadeIn';
 
 interface Project {
@@ -25,6 +25,7 @@ const projects: Project[] = [
       'Implemented a self-correction engine using contextual feedback loops to iteratively repair structural hallucinations across model outputs.',
     ],
     live: 'appforge-ai-hvco.onrender.com',
+    github: 'github.com/navvv29/AppForge-AI',
   },
   {
     id: 2,
@@ -36,6 +37,7 @@ const projects: Project[] = [
       'Built for Digital University Kerala Hackathon 2026 — auto-routed 100% of test grievance submissions to correct government departments via NLP classification.',
       'Cut grievance categorisation time from ~5 minutes (manual) to under 3 seconds using RAG pipelines and transformer-based text classification.',
     ],
+    github: 'github.com/navvv29/Civic_Resolve',
   },
   {
     id: 3,
@@ -48,6 +50,7 @@ const projects: Project[] = [
       'Engineered a processing pipeline with algorithmic level-matching to anchor salary insights to standardised engineering tiers.',
     ],
     live: 'compensation-intelligence.onrender.com',
+    github: 'github.com/navvv29/compensation-intelligence',
   },
   {
     id: 4,
@@ -171,20 +174,34 @@ export const ProjectsSection: React.FC = () => {
 
                 {/* Bottom Row */}
                 <div className="flex justify-between items-center pt-4 border-t border-[var(--border)]">
-                  <span className={`rounded-sm px-2 py-1 text-xs font-mono ${getTypeStyles(project.type)}`}>
+                  <span className={`rounded-sm px-2 py-1 text-xs font-mono flex-shrink-0 ${getTypeStyles(project.type)}`}>
                     {project.type}
                   </span>
 
-                  {(project.live || project.github) && (
-                    <a
-                      href={`${project.live ? 'https://' + project.live : project.github ? 'https://' + project.github : '#'}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
-                    >
-                      <ExternalLink size={24} />
-                    </a>
-                  )}
+                  <div className="flex gap-4">
+                    {project.github && (
+                      <a
+                        href={`https://${project.github}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
+                        title="View Source Code"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={`https://${project.live}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
+                        title="View Live Site"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </FadeIn>
