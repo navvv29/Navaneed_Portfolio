@@ -16,6 +16,17 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    name: 'Psychometric & Mental Wellness AI Assessment',
+    year: 2026,
+    type: 'Client',
+    tech: ['Python', 'FastAPI', 'Next.js', 'Milvus', 'LLM Fine-tuning'],
+    description: [
+      'Designed and implemented a complex 4-component distributed system (Next.js frontend, async FastAPI backend, Ollama LLM inference server, Milvus Lite vector DB) communicating via Fast APIs.',
+      'Fine-tuned Llama 3.1 8B (LoRA/QLoRA) and built a RAG pipeline over embedded research papers.',
+    ],
+  },
+  {
+    id: 2,
     name: 'AppForge AI',
     year: 2026,
     type: 'Personal',
@@ -28,7 +39,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/AppForge-AI',
   },
   {
-    id: 2,
+    id: 3,
     name: 'CivicResolve AI',
     year: 2026,
     type: 'Hackathon',
@@ -40,7 +51,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/Civic_Resolve',
   },
   {
-    id: 3,
+    id: 4,
     name: 'CompIntel',
     year: 2026,
     type: 'Personal',
@@ -53,7 +64,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/compensation-intelligence',
   },
   {
-    id: 4,
+    id: 5,
     name: 'LumiCity AI',
     year: 2026,
     type: 'Academic',
@@ -64,7 +75,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: 'SyncEdu',
     year: 2026,
     type: 'Personal',
@@ -75,7 +86,7 @@ const projects: Project[] = [
     live: 'sync-edu-five.vercel.app',
   },
   {
-    id: 6,
+    id: 7,
     name: 'FishKart',
     year: 2025,
     type: 'Hackathon',

@@ -31,23 +31,21 @@ const awards: Award[] = [
 ];
 
 const certifications: Certification[] = [
-  { id: 1, name: 'Deep Learning with Keras & TensorFlow', issuer: 'IBM' },
-  { id: 2, name: 'Deep Learning with PyTorch', issuer: 'IBM' },
-  { id: 3, name: 'RAG & LangChain Fundamentals', issuer: 'IBM' },
-  { id: 4, name: 'Generative AI Architecture', issuer: 'IBM' },
-  { id: 5, name: 'Advanced Fine-Tuning for LLMs', issuer: 'IBM' },
-  { id: 6, name: 'Language Modeling with Transformers', issuer: 'IBM' },
-  { id: 7, name: 'Engineering Fine-Tuning of LLMs', issuer: 'IBM' },
-  { id: 8, name: 'Gen AI Foundational NLP', issuer: 'IBM' },
-  { id: 9, name: 'Neural Networks with PyTorch', issuer: 'IBM' },
-  { id: 10, name: 'Deep Learning with Keras', issuer: 'IBM' },
-  { id: 11, name: 'Cloud Envisioning Essentials', issuer: 'IBM' },
-  { id: 12, name: 'GenAI Data Analytics', issuer: 'Tata Forage' },
-  { id: 13, name: 'Cyber Security Fundamentals', issuer: 'Deloitte Forage' },
-  { id: 14, name: 'Technology Essentials', issuer: 'Deloitte Forage' },
-  { id: 15, name: 'Python & Web Development', issuer: 'L&T EduTech' },
-  { id: 16, name: 'Joy of Computing with Python', issuer: 'NPTEL' },
-  { id: 17, name: 'English for Competitive Exams', issuer: 'NPTEL' },
+  { id: 1, name: 'Make Agentic AI Work for You', issuer: 'IBM SkillsBuild' },
+  { id: 2, name: 'AI Skills Passport', issuer: 'EY and Microsoft' },
+  { id: 3, name: 'AI Agents Using RAG and LangChain', issuer: 'IBM SkillsBuild' },
+  { id: 4, name: 'Generative AI and LLMs Architecture', issuer: 'IBM SkillsBuild' },
+  { id: 5, name: 'GenAI Advanced Fine-Tuning for LLMs', issuer: 'IBM SkillsBuild' },
+  { id: 6, name: 'GenAI Language Modeling with Transformers', issuer: 'IBM SkillsBuild' },
+  { id: 7, name: 'GenAI Foundational Models for NLP', issuer: 'IBM SkillsBuild' },
+  { id: 8, name: 'Deep Learning with Keras & TensorFlow', issuer: 'IBM SkillsBuild' },
+  { id: 9, name: 'Deep Learning with PyTorch', issuer: 'IBM SkillsBuild' },
+  { id: 10, name: 'Intro to Neural Networks and PyTorch', issuer: 'IBM SkillsBuild' },
+  { id: 11, name: 'GenAI-Powered Data Analytics', issuer: 'Tata Forage' },
+  { id: 12, name: 'Cyber Job Simulation', issuer: 'Deloitte Forage' },
+  { id: 13, name: 'Technology Job Simulation', issuer: 'Deloitte Forage' },
+  { id: 14, name: 'Python Programming and Web Development', issuer: 'L&T EduTech' },
+  { id: 15, name: 'Joy of Computing Using Python', issuer: 'NPTEL/SWAYAM' },
 ];
 
 export const AchievementsSection: React.FC = () => {

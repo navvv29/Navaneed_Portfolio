@@ -15,6 +15,18 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
+    company: 'DataRig Pvt. Ltd.',
+    role: 'Artificial Intelligence Intern',
+    dateRange: 'Jun. 2026 – Present',
+    location: 'Remote, India',
+    type: 'Remote',
+    dotColor: 'var(--accent)',
+    bullets: [
+      'Built an AI-powered psychometric assessment platform using FastAPI and Next.js; fine-tuned LLM (Llama 3.1) with QLoRA and integrated a RAG pipeline over a curated psychology vector database.',
+    ],
+  },
+  {
+    id: 2,
     company: 'IBM SkillsBuild – AICTE, Edunet Foundation',
     role: 'Front End Web Development Intern',
     dateRange: 'Aug–Sep 2025',
@@ -27,7 +39,7 @@ const experiences: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: 'AICTE – Shell India Markets, Edunet Foundation',
     role: 'AI and Data Analytics Intern — Skills4Future',
     dateRange: 'Jul–Aug 2025',
@@ -40,15 +52,15 @@ const experiences: Experience[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: 'Envirotab Solutions',
     role: 'Research and Development Intern',
-    dateRange: 'Jun 2025',
-    location: 'Remote',
+    dateRange: 'Jun. 2025 – Jul. 2025',
+    location: 'India',
     type: 'Remote',
     dotColor: 'var(--accent-3)',
     bullets: [
-      'Contributed to 2 R&D prototypes by reviewing technical literature, implementing findings into experiments, and producing structured reports for senior researchers.',
+      'Conducted market research and competitor analysis to support early-stage product positioning for an environment-tech startup; synthesized findings into structured reports for founding team decision-making.',
     ],
   },
 ];
