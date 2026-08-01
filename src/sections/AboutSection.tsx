@@ -46,7 +46,7 @@ export const AboutSection: React.FC = () => {
           <div className="space-y-6">
             <FadeIn delay={0.2} y={20} duration={0.7}>
               <p className="text-[var(--text-muted)] font-light leading-relaxed text-[clamp(0.95rem,1.5vw,1.1rem)] font-space">
-                I'm Navaneed — a pre-final year B.Tech student in Artificial Intelligence and Data Science at APJ Abdul Kalam Technological University, graduating in May 2027. I have a CGPA of 7.92 and I genuinely care about building systems that work in the real world, not just on paper.
+                I'm Navaneed — a final year B.Tech student in Artificial Intelligence and Data Science at APJ Abdul Kalam Technological University, graduating in May 2027. I have a CGPA of 7.92 and I genuinely care about building systems that work in the real world, not just on paper.
               </p>
             </FadeIn>
 
