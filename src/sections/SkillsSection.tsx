@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Brain, Cpu, Server } from 'lucide-react';
+import { Code2, Brain, Cpu, Server, BarChart3, Terminal } from 'lucide-react';
 import { FadeIn } from '../components/FadeIn';
 
 interface SkillCategory {
@@ -26,6 +26,10 @@ const skillCategories: SkillCategory[] = [
       'CSS',
       'SQL',
       'ReactJS',
+      'Next.js',
+      'Tailwind CSS',
+      'REST APIs',
+      'GraphQL',
     ],
   },
   {
@@ -47,6 +51,14 @@ const skillCategories: SkillCategory[] = [
       'RAG',
       'YOLOv8',
       'OpenCV',
+      'spaCy',
+      'NLTK',
+      'XGBoost',
+      'LightGBM',
+      'CNNs',
+      'RNNs / LSTMs',
+      'GANs',
+      'Attention Mechanisms',
     ],
   },
   {
@@ -54,34 +66,89 @@ const skillCategories: SkillCategory[] = [
     title: 'LLM Expertise',
     icon: <Cpu size={24} />,
     skills: [
-      'Fine-Tuning',
-      'Quantization',
+      'Fine-Tuning (LoRA / QLoRA)',
+      'Quantization (GGUF / GPTQ)',
       'RAG Pipelines',
       'Prompt Engineering',
       'LLM Evaluation',
       'Multi-Agent Orchestration',
       'Agentic AI',
+      'Function Calling & Tool Use',
+      'vLLM / Ollama',
+      'Vector Databases',
+      'ChromaDB',
+      'Milvus',
+      'Pinecone',
+      'FAISS',
+      'LLM Guardrails',
+      'Semantic Search',
     ],
   },
   {
     id: 4,
-    title: 'Backend & Tools',
+    title: 'Data Science & Analytics',
+    icon: <BarChart3 size={24} />,
+    skills: [
+      'Pandas',
+      'NumPy',
+      'Matplotlib',
+      'Seaborn',
+      'Plotly',
+      'Scipy',
+      'Power BI',
+      'Excel',
+      'EDA',
+      'Feature Engineering',
+      'Statistical Modeling',
+      'Hypothesis Testing',
+      'A/B Testing',
+      'Time Series Analysis',
+      'Data Wrangling',
+      'Web Scraping',
+    ],
+  },
+  {
+    id: 5,
+    title: 'Backend & Databases',
     icon: <Server size={24} />,
     skills: [
       'Node.js',
       'Express.js',
-      'Next.js',
-      'Prisma ORM',
-      'PostgreSQL',
       'FastAPI',
+      'Flask',
+      'Prisma ORM',
+      'SQLAlchemy',
+      'PostgreSQL',
+      'MySQL',
+      'MongoDB',
+      'SQLite',
+      'Redis',
       'Zod',
+      'WebSockets',
+      'Microservices',
+    ],
+  },
+  {
+    id: 6,
+    title: 'DevOps & Tools',
+    icon: <Terminal size={24} />,
+    skills: [
+      'Linux',
+      'Bash / Shell Scripting',
       'Git',
       'GitHub',
+      'Docker',
+      'CI/CD',
+      'AWS (EC2, S3, Lambda)',
+      'Google Cloud',
+      'MLflow',
+      'Weights & Biases',
       'Jupyter',
       'VS Code',
-      'Google Cloud',
       'Vercel',
       'Render',
+      'Streamlit',
+      'Gradio',
     ],
   },
 ];
@@ -105,7 +172,7 @@ export const SkillsSection: React.FC = () => {
         </FadeIn>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {skillCategories.map((category, idx) => (
             <FadeIn
               key={category.id}

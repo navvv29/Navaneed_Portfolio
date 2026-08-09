@@ -12,7 +12,17 @@ The portfolio has been updated with the following changes:
 1. **Year Status Update**:
    - Changed "pre-final year" to "final year" across `HeroSection.tsx` and `AboutSection.tsx`.
 
-2. **Blog Section (`BlogSection.tsx`)** — NEW:
+2. **Skills Section Expansion (`SkillsSection.tsx`)**:
+   - Expanded from 4 categories to 6, now covering 90+ skills.
+   - Added **Data Science & Analytics** category: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scipy, Power BI, Excel, EDA, Feature Engineering, Statistical Modeling, Hypothesis Testing, A/B Testing, Time Series Analysis, Data Wrangling, Web Scraping.
+   - Added **DevOps & Tools** category: Linux, Bash/Shell Scripting, Docker, CI/CD, AWS (EC2, S3, Lambda), MLflow, Weights & Biases, Streamlit, Gradio.
+   - Expanded **AI/ML & DL** with: spaCy, NLTK, XGBoost, LightGBM, CNNs, RNNs/LSTMs, GANs, Attention Mechanisms.
+   - Expanded **LLM Expertise** with: LoRA/QLoRA, GGUF/GPTQ, Function Calling & Tool Use, vLLM/Ollama, ChromaDB, Milvus, Pinecone, FAISS, LLM Guardrails, Semantic Search.
+   - Expanded **Backend & Databases** with: Flask, SQLAlchemy, MySQL, MongoDB, SQLite, Redis, WebSockets, Microservices.
+   - Expanded **Languages & Web** with: Next.js, Tailwind CSS, REST APIs, GraphQL.
+   - Updated grid layout to 3 columns on large screens.
+
+3. **Blog Section (`BlogSection.tsx`)** — NEW:
    - Added a brand-new Blog section between Projects and Experience.
    - Features 7 detailed project blog posts sourced from GitHub READMEs at `github.com/navvv29`.
    - Each blog post includes: project summary, "Why It Matters" (real-world relevance), "What I Built" (technical deep-dive), tech stack tags, read-time estimates, and links to GitHub repos / live demos.
