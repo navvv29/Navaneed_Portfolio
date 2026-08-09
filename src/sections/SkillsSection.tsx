@@ -177,8 +177,8 @@ export const SkillsSection: React.FC = () => {
           </h2>
         </FadeIn>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start gap-6 mt-12">
+        {/* Skills Grid — Masonry Layout */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 mt-12">
           {skillCategories.map((category, idx) => (
             <FadeIn
               key={category.id}
@@ -186,7 +186,7 @@ export const SkillsSection: React.FC = () => {
               y={20}
               duration={0.7}
             >
-              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 hover:border-[var(--accent-2)] transition-colors duration-200">
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 hover:border-[var(--accent-2)] transition-colors duration-200 mb-6 break-inside-avoid">
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-4">
                   <div className="text-[var(--accent)] flex-shrink-0">
