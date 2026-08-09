@@ -1,13 +1,39 @@
 # Navaneed's Portfolio Documentation
 
 ## Overview
-This is the personal portfolio website of Navaneed P, an AI and Data Science B.Tech student at APJ Abdul Kalam Technological University. The portfolio showcases his professional experience, end-to-end AI/ML projects, and 14+ technical certifications.
+This is the personal portfolio website of Navaneed P, an AI and Data Science B.Tech student at APJ Abdul Kalam Technological University. The portfolio showcases his professional experience, end-to-end AI/ML projects, project blog write-ups, and 14+ technical certifications.
 
 ## Current Status
-**Date:** June 20, 2026
+**Date:** August 9, 2026
 
-The portfolio has been recently updated with the following additions based on the latest resume:
-1. **Experience Section (`ExperienceSection.tsx`)**: 
+The portfolio has been updated with the following changes:
+
+### Latest Update (Aug 9, 2026)
+1. **Year Status Update**:
+   - Changed "pre-final year" to "final year" across `HeroSection.tsx` and `AboutSection.tsx`.
+
+2. **Blog Section (`BlogSection.tsx`)** — NEW:
+   - Added a brand-new Blog section between Projects and Experience.
+   - Features 7 detailed project blog posts sourced from GitHub READMEs at `github.com/navvv29`.
+   - Each blog post includes: project summary, "Why It Matters" (real-world relevance), "What I Built" (technical deep-dive), tech stack tags, read-time estimates, and links to GitHub repos / live demos.
+   - Blog posts are expandable/collapsible cards with smooth framer-motion animations.
+   - Projects covered:
+     - **AppForge AI** — Multi-LLM app compiler with Zod validation & repair engine
+     - **Psychometric & Mental Wellness AI** — Fine-tuned Llama 3.1 + RAG for clinical assessments
+     - **CivicResolve AI** — NLP-based civic grievance auto-routing (DUK Hackathon)
+     - **SyncEdu** — AI-powered college management with natural language command center
+     - **AeroGuard** — Pollution intelligence platform fusing vision AI, IoT, and satellite data
+     - **Sensitive Data Detection** — Privacy-first PII detection with local NER + RAG compliance
+     - **CompIntel** — Compensation intelligence with algorithmic level-matching
+
+3. **Navigation Update (`HeroSection.tsx`)**:
+   - Added "Blog" to the navbar navigation links.
+
+4. **App Layout (`App.tsx`)**:
+   - Imported and rendered `<BlogSection />` between `<ProjectsSection />` and `<ExperienceSection />`.
+
+### Previous Update (Jun 20, 2026)
+1. **Experience Section (`ExperienceSection.tsx`)**:
    - Added the "DataRig Pvt. Ltd." Artificial Intelligence Internship (Jun. 2026 - Present), where an AI-powered psychometric assessment platform was built using FastAPI, Next.js, and a fine-tuned Llama 3.1 LLM with QLoRA and RAG pipeline.
 2. **Projects Section (`ProjectsSection.tsx`)**:
    - Added the "Psychometric & Mental Wellness AI Assessment" project (developed during the DataRig internship), detailing the 4-component distributed system and the LLM fine-tuning using LoRA/QLoRA.
@@ -29,6 +55,21 @@ The portfolio has been recently updated with the following additions based on th
 - TypeScript
 - Vite
 - Tailwind CSS
+- Framer Motion
+- Lucide React Icons
+
+## File Structure
+- `src/App.tsx` — Main app layout and component composition
+- `src/sections/HeroSection.tsx` — Hero banner, navbar, stats
+- `src/sections/AboutSection.tsx` — About me with terminal widget
+- `src/sections/ProjectsSection.tsx` — Project cards
+- `src/sections/BlogSection.tsx` — Project blog write-ups (NEW)
+- `src/sections/ExperienceSection.tsx` — Work experience timeline
+- `src/sections/SkillsSection.tsx` — Technical skills
+- `src/sections/AchievementsSection.tsx` — Certifications
+- `src/sections/ContactSection.tsx` — Contact info
+- `src/sections/TechStackMarquee.tsx` — Scrolling tech logos
+- `src/components/` — Reusable UI components (FadeIn, TypewriterText, etc.)
 
 ## Maintenance
 Always update this documentation file every time changes are made to the project to reflect the latest status and additions.

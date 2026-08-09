@@ -7,6 +7,7 @@ import { ProjectsSection } from './sections/ProjectsSection';
 import { ExperienceSection } from './sections/ExperienceSection';
 import { SkillsSection } from './sections/SkillsSection';
 import { AchievementsSection } from './sections/AchievementsSection';
+import { BlogSection } from './sections/BlogSection';
 import { ContactSection } from './sections/ContactSection';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <TechStackMarquee />
       <AboutSection />
       <ProjectsSection />
+      <BlogSection />
       <ExperienceSection />
       <SkillsSection />
       <AchievementsSection />
