@@ -147,7 +147,7 @@ export const HeroSection: React.FC = () => {
           <div className="flex gap-8 md:gap-16 mt-8 flex-col sm:flex-row items-center justify-center">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-[var(--accent)] font-mono">
-                <CountUp target={6} suffix="+" />
+                <CountUp target={9} suffix="+" />
               </div>
               <p className="text-[var(--text-muted)] text-xs uppercase tracking-widest font-mono mt-2">
                 AI/ML Projects

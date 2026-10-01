@@ -13,7 +13,8 @@ export const AboutSection: React.FC = () => {
     '',
     '$ ls projects/',
     '> AppForge_AI/  CompIntel/  CivicResolve_AI/',
-    '> LumiCity_AI/  SyncEdu/    FishKart/',
+    '> LumiCity_AI/  SyncEdu/    NOVA_AI/',
+    '> DataDoctor/   FishKart/',
     '',
     '$ cat status.txt',
     '> Open to internships & collaborations',
@@ -46,7 +47,7 @@ export const AboutSection: React.FC = () => {
           <div className="space-y-6">
             <FadeIn delay={0.2} y={20} duration={0.7}>
               <p className="text-[var(--text-muted)] font-light leading-relaxed text-[clamp(0.95rem,1.5vw,1.1rem)] font-space">
-                I'm Navaneed — a final year B.Tech student in Artificial Intelligence and Data Science at APJ Abdul Kalam Technological University, graduating in May 2027. I have a CGPA of 7.92 and I genuinely care about building systems that work in the real world, not just on paper.
+                I'm Navaneed — a final year B.Tech student in Artificial Intelligence and Data Science at APJ Abdul Kalam Technological University, graduating in May 2027. I have a CGPA of 7.89 and I genuinely care about building systems that work in the real world, not just on paper.
               </p>
             </FadeIn>
 
@@ -65,7 +66,7 @@ export const AboutSection: React.FC = () => {
             {/* CGPA Badge */}
             <FadeIn delay={0.65} y={20} duration={0.7}>
               <div className="mt-8 bg-[var(--surface)] border border-[var(--border)] rounded-xl px-5 py-4 w-fit">
-                <p className="font-mono text-[var(--accent)] font-bold">CGPA: 7.92 / 10.0</p>
+                <p className="font-mono text-[var(--accent)] font-bold">CGPA: 7.89 / 10.0</p>
                 <p className="text-[var(--text-muted)] text-xs mt-1">APJ Abdul Kalam Technological University</p>
               </div>
             </FadeIn>

@@ -16,6 +16,30 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    name: 'NOVA AI — Personal AI Study Companion',
+    year: 2026,
+    type: 'Personal',
+    tech: ['Python', 'PostgreSQL', 'Adaptive Learning', 'Spaced Repetition', 'Thompson Sampling'],
+    description: [
+      'Built a private, adaptive AI study companion with persistent memory, SM-2 spaced repetition flashcards, quiz generation, and performance analytics with XP system.',
+      'Implemented multi-armed bandit (Thompson Sampling) algorithm to learn which of 10 study methods work best, delivering personalised study recommendations.',
+    ],
+    github: 'github.com/navvv29/NOVA_AI',
+  },
+  {
+    id: 2,
+    name: 'DataDoctor — Automated Dataset Quality Engine',
+    year: 2026,
+    type: 'Personal',
+    tech: ['Python', 'Flask', 'Pandas', 'NumPy', 'Docker', 'AWS'],
+    description: [
+      'Engineered a lightweight, high-performance web service that evaluates health, structure, and reliability of CSV datasets with 100% deterministic scoring — no black-box LLMs.',
+      'Implemented 4D quality scoring (Completeness, Uniqueness, Consistency, Validity) with IQR outlier detection, duplicate analysis, and zero-data-retention in-memory processing.',
+    ],
+    github: 'github.com/navvv29/Data_Doctor',
+  },
+  {
+    id: 3,
     name: 'Psychometric & Mental Wellness AI Assessment',
     year: 2026,
     type: 'Client',
@@ -26,7 +50,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     name: 'AppForge AI',
     year: 2026,
     type: 'Personal',
@@ -39,7 +63,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/AppForge-AI',
   },
   {
-    id: 3,
+    id: 5,
     name: 'CivicResolve AI',
     year: 2026,
     type: 'Hackathon',
@@ -51,7 +75,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/Civic_Resolve',
   },
   {
-    id: 4,
+    id: 6,
     name: 'CompIntel',
     year: 2026,
     type: 'Personal',
@@ -64,18 +88,19 @@ const projects: Project[] = [
     github: 'github.com/navvv29/compensation-intelligence',
   },
   {
-    id: 5,
+    id: 7,
     name: 'LumiCity AI',
     year: 2026,
     type: 'Academic',
-    tech: ['Python', 'YOLOv8', 'OpenCV', 'Computer Vision', 'Satellite Data'],
+    tech: ['Python', 'YOLOv8', 'OpenCV', 'Computer Vision', 'Satellite Data', 'Streamlit'],
     description: [
-      'Designed an AI street-light dimming system using real-time pedestrian detection via YOLOv8; demonstrated up to 35% simulated energy savings vs. always-on baseline.',
-      'Integrated OpenCV motion detection with satellite data fusion, achieving sub-second dynamic light intensity adjustment.',
+      'Designed an autonomous smart city street light optimization platform using YOLOv8 edge vision, NASA VIIRS satellite radiance telemetry, and Gradient Boosting ML models for 8 Kerala municipalities.',
+      'Achieved dynamic demand-responsive lighting with 40–70% simulated energy savings, real-time weather safety overrides, and light pollution mitigation using orbital calibration data.',
     ],
+    github: 'github.com/navvv29/LumiCity',
   },
   {
-    id: 6,
+    id: 8,
     name: 'SyncEdu',
     year: 2026,
     type: 'Personal',
@@ -84,9 +109,10 @@ const projects: Project[] = [
       'Built an AI-enabled campus ERP unifying academic, administrative, and operational workflows using multi-agent orchestration and LLM pipelines.',
     ],
     live: 'sync-edu-five.vercel.app',
+    github: 'github.com/navvv29/SyncEdu',
   },
   {
-    id: 7,
+    id: 9,
     name: 'FishKart',
     year: 2025,
     type: 'Hackathon',
@@ -98,6 +124,7 @@ const projects: Project[] = [
     github: 'github.com/navvv29/fishkart',
   },
 ];
+
 
 export const ProjectsSection: React.FC = () => {
   const getTypeStyles = (type: string) => {

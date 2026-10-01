@@ -4,11 +4,49 @@
 This is the personal portfolio website of Navaneed P, an AI and Data Science B.Tech student at APJ Abdul Kalam Technological University. The portfolio showcases his professional experience, end-to-end AI/ML projects, project blog write-ups, and 14+ technical certifications.
 
 ## Current Status
-**Date:** August 9, 2026
+**Date:** October 1, 2026
 
 The portfolio has been updated with the following changes:
 
-### Latest Update (Aug 9, 2026)
+### Latest Update (Oct 1, 2026)
+1. **CGPA Update**:
+   - Changed CGPA from **7.92** to **7.89** across `AboutSection.tsx` (both paragraph text and CGPA badge).
+
+2. **New Projects Added (`ProjectsSection.tsx`)**:
+   - **NOVA AI — Personal AI Study Companion** (Personal, 2026): Adaptive AI study companion with persistent memory, SM-2 spaced repetition, Thompson Sampling optimization, and XP system. GitHub: `navvv29/NOVA_AI`.
+   - **DataDoctor — Automated Dataset Quality Engine** (Personal, 2026): Lightweight Flask web service for CSV dataset quality profiling with 4D scoring (Completeness, Uniqueness, Consistency, Validity), 100% deterministic, zero-LLM, Docker/AWS ready. GitHub: `navvv29/Data_Doctor`.
+   - Total projects increased from 7 to 9.
+   - Project IDs re-numbered accordingly.
+
+3. **Existing Projects Updated (`ProjectsSection.tsx`)**:
+   - **LumiCity AI**: Enhanced description to reflect NASA VIIRS satellite data integration, Gradient Boosting ML, 8 Kerala municipalities, 40–70% energy savings. Added GitHub link (`navvv29/LumiCity`). Added Streamlit to tech stack.
+   - **SyncEdu**: Added GitHub link (`navvv29/SyncEdu`).
+
+4. **Hero Section Updated (`HeroSection.tsx`)**:
+   - Changed AI/ML Projects stat from **6+** to **9+**.
+
+5. **About Section Updated (`AboutSection.tsx`)**:
+   - Terminal widget updated to list NOVA_AI and DataDoctor in the projects listing.
+   - CGPA updated to 7.89 in both paragraph and badge.
+
+6. **Skills Section Updated (`SkillsSection.tsx`)**:
+   - **Languages & Web**: Added `Vite`.
+   - **AI / ML & DL**: Added `Gradient Boosting`, `IsolationForest`, `DBSCAN`, `Thompson Sampling`, `Spaced Repetition (SM-2)`.
+   - **Data Science & Analytics**: Added `Data Quality & Profiling`, `Anomaly Detection`.
+   - **Backend & Databases**: Added `In-Memory Processing`.
+   - **DevOps & Tools**: Updated `AWS (EC2, S3, Lambda)` to `AWS (EC2, S3, ECR, Lambda)`. Added `Pytest`, `Folium / GIS Mapping`.
+   - Total skills expanded from ~90+ to ~100+.
+
+7. **Blog Section Updated (`BlogSection.tsx`)**:
+   - Added 3 new blog posts:
+     - **NOVA AI — Building a Personal Adaptive Study Companion** (Adaptive AI category)
+     - **DataDoctor — Deterministic Dataset Quality Profiling** (Data Engineering category)
+     - **LumiCity Kerala — NASA Satellite-Powered Smart City Lighting** (ML / Computer Vision category)
+   - Added 2 new category styles: `Adaptive AI` (purple), `Data Engineering` (sky blue).
+   - All existing blog post IDs re-numbered (1-7 → 4-10).
+   - Total blog posts increased from 7 to 10.
+
+### Previous Update (Aug 9, 2026)
 1. **Year Status Update**:
    - Changed "pre-final year" to "final year" across `HeroSection.tsx` and `AboutSection.tsx`.
 
@@ -72,10 +110,10 @@ The portfolio has been updated with the following changes:
 - `src/App.tsx` — Main app layout and component composition
 - `src/sections/HeroSection.tsx` — Hero banner, navbar, stats
 - `src/sections/AboutSection.tsx` — About me with terminal widget
-- `src/sections/ProjectsSection.tsx` — Project cards
-- `src/sections/BlogSection.tsx` — Project blog write-ups (NEW)
+- `src/sections/ProjectsSection.tsx` — Project cards (9 projects)
+- `src/sections/BlogSection.tsx` — Project blog write-ups (10 posts)
 - `src/sections/ExperienceSection.tsx` — Work experience timeline
-- `src/sections/SkillsSection.tsx` — Technical skills
+- `src/sections/SkillsSection.tsx` — Technical skills (100+ skills, 6 categories)
 - `src/sections/AchievementsSection.tsx` — Certifications
 - `src/sections/ContactSection.tsx` — Contact info
 - `src/sections/TechStackMarquee.tsx` — Scrolling tech logos

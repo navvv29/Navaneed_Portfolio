@@ -20,6 +20,51 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
+    title: 'NOVA AI — Building a Personal Adaptive Study Companion',
+    date: 'Aug 2026',
+    readTime: '4 min',
+    category: 'Adaptive AI',
+    tech: ['Python', 'PostgreSQL', 'Thompson Sampling', 'SM-2 Algorithm', 'SSE', 'Task Scheduling'],
+    summary:
+      'A private, adaptive AI study companion that learns how you learn — with persistent memory, spaced repetition, voice input, and multi-armed bandit study method optimization.',
+    whyItMatters:
+      'Generic study tools treat every learner the same. They don\'t adapt to your pace, your strengths, or which methods actually work for you. NOVA AI exists because I wanted a study companion that genuinely learns from my behaviour — not just stores flashcards. The multi-armed bandit approach (Thompson Sampling) is the key insight: instead of guessing which study method works best, the system runs a continuous experiment across 10 methods and converges on what actually improves your retention. It\'s privacy-first (everything runs locally), which matters because student data is sensitive.',
+    whatIBuilt:
+      'A full-stack personal AI with persistent memory across sessions via PostgreSQL. Core features include SM-2 spaced repetition flashcards, quiz generation (MCQ, true/false, mixed), text summarization, and performance tracking with an XP system and skill levels. The adaptive learning engine uses Thompson Sampling (multi-armed bandit) to track 10 study methods — flashcards, active recall, pomodoro, interleaving, elaboration, practice problems, mind mapping, teach back, Cornell notes, and retrieval practice — and delivers personalised recommendations. Always-On mode runs a background scheduler monitoring flashcard reviews, deadlines, and streaks, with push notifications via Server-Sent Events.',
+    github: 'github.com/navvv29/NOVA_AI',
+  },
+  {
+    id: 2,
+    title: 'DataDoctor — Deterministic Dataset Quality Profiling',
+    date: 'Sep 2026',
+    readTime: '5 min',
+    category: 'Data Engineering',
+    tech: ['Python', 'Flask', 'Pandas', 'NumPy', 'Docker', 'AWS ECR/EC2', 'Pytest'],
+    summary:
+      'A lightweight, zero-LLM web service that evaluates the health, structure, and reliability of CSV datasets with 131 passing tests and 100% deterministic scoring.',
+    whyItMatters:
+      'Most data quality tools either rely on black-box ML models that can\'t explain their scores, or they\'re enterprise behemoths that require weeks to configure. DataDoctor takes a deliberately different approach: every score, percentage, and recommendation stems from transparent statistical rules and documented heuristics. There are no LLMs anywhere in the pipeline — the system is 100% deterministic, which means the same dataset always produces the exact same report. This matters for regulated industries where you need auditable, reproducible quality assessments. The zero-data-retention architecture (pure in-memory processing) also addresses privacy concerns — your dataset never touches disk.',
+    whatIBuilt:
+      'A Flask web service with strict separation between HTTP transport, analytical computation, and presentation layers. The analyzer core implements 4 orthogonal quality dimensions (Completeness, Uniqueness, Consistency, Validity) scored 0-100 with mathematical formulas. Quality checks include IQR outlier detection, duplicate row/key analysis, constant column detection, categorical inconsistency via case/whitespace normalization, and date format validation. The system uses resilient encoding detection (UTF-8 → UTF-8-SIG → CP1252 fallback), dual-channel content negotiation (JSON SPA or server-rendered HTML), and is containerized for Docker/AWS ECR→EC2 deployment. 131 tests pass via pytest.',
+    github: 'github.com/navvv29/Data_Doctor',
+  },
+  {
+    id: 3,
+    title: 'LumiCity Kerala — NASA Satellite-Powered Smart City Lighting',
+    date: 'Oct 2026',
+    readTime: '5 min',
+    category: 'ML / Computer Vision',
+    tech: ['Python', 'Streamlit', 'YOLOv8', 'scikit-learn', 'OpenCV', 'NASA VIIRS', 'SQLite', 'Folium'],
+    summary:
+      'An autonomous smart city street light optimization engine for 8 Kerala municipalities, fusing NASA satellite radiance data, real-time weather APIs, and YOLOv8 edge computer vision.',
+    whyItMatters:
+      'Traditional municipal street lighting operates on binary mechanical timers — 100% intensity for 12 hours straight, regardless of road demand, weather, or time. This wastes massive amounts of energy and creates severe light pollution that disrupts ecosystems and human circadian rhythms. LumiCity treats street lighting as a continuous mathematical optimization problem, minimizing illumination wattage while enforcing hard-bounded safety guarantees. When visibility drops below 3,000m (monsoon conditions), the system mandates ≥60% intensity as a safety floor. When late-night cameras detect vehicles or pedestrians, lighting surges dynamically. The result is 40–70% simulated energy savings with zero compromise on safety.',
+    whatIBuilt:
+      'A state-of-the-art municipal IoT and AI platform engineered for 8 Kerala urban centers. The ML stack includes a Regularized Gradient Boosting Regressor (R²≈0.92) with deliberate 6% Gaussian noise injection to prevent overfitting, trained on NASA VIIRS VNP46A1 orbital radiance data and Open-Meteo weather telemetry. YOLOv8 nano runs in a decoupled background daemon for real-time pedestrian/vehicle detection, with a Kinetic Energy Weighted Traffic Risk Score that weights objects by physical momentum (trucks > cars > bicycles). The platform features 21-point smooth spline interpolation for flicker-free dimming, asynchronous multi-threaded daemon architecture, interactive Folium GIS mapping of 70 smart fixtures, a light pollution image profiler using computer vision, and automated carbon accounting.',
+    github: 'github.com/navvv29/LumiCity',
+  },
+  {
+    id: 4,
     title: 'AppForge AI — Building a Multi-LLM App Compiler',
     date: 'Mar 2026',
     readTime: '5 min',
@@ -34,8 +79,9 @@ const blogPosts: BlogPost[] = [
     github: 'github.com/navvv29/AppForge-AI',
     live: 'appforge-ai-hvco.onrender.com',
   },
+
   {
-    id: 2,
+    id: 5,
     title: 'Psychometric & Mental Wellness AI Assessment',
     date: 'Jun 2026',
     readTime: '4 min',
@@ -50,7 +96,7 @@ const blogPosts: BlogPost[] = [
     github: 'github.com/navvv29/psychometry_ai',
   },
   {
-    id: 3,
+    id: 6,
     title: 'CivicResolve AI — Intelligent Grievance Routing',
     date: 'May 2026',
     readTime: '4 min',
@@ -65,7 +111,7 @@ const blogPosts: BlogPost[] = [
     github: 'github.com/navvv29/Civic-Resolve',
   },
   {
-    id: 4,
+    id: 7,
     title: 'SyncEdu — AI-Powered College Management System',
     date: 'Apr 2026',
     readTime: '4 min',
@@ -81,7 +127,7 @@ const blogPosts: BlogPost[] = [
     github: 'github.com/navvv29/SyncEdu',
   },
   {
-    id: 5,
+    id: 8,
     title: 'AeroGuard — Pollution Intelligence Platform',
     date: 'Jun 2026',
     readTime: '3 min',
@@ -96,7 +142,7 @@ const blogPosts: BlogPost[] = [
     github: 'github.com/navvv29/AeroGuard',
   },
   {
-    id: 6,
+    id: 9,
     title: 'Sensitive Data Detection & Compliance Assistant',
     date: 'Jul 2026',
     readTime: '4 min',
@@ -112,7 +158,7 @@ const blogPosts: BlogPost[] = [
     live: 'sensitive-data-detection-system.vercel.app',
   },
   {
-    id: 7,
+    id: 10,
     title: 'CompIntel — Compensation Intelligence Platform',
     date: 'Mar 2026',
     readTime: '3 min',
@@ -131,6 +177,10 @@ const blogPosts: BlogPost[] = [
 
 const getCategoryStyles = (category: string) => {
   switch (category) {
+    case 'Adaptive AI':
+      return 'bg-[rgba(168,85,247,0.1)] text-[#A855F7] border-[rgba(168,85,247,0.2)]';
+    case 'Data Engineering':
+      return 'bg-[rgba(14,165,233,0.1)] text-[#0EA5E9] border-[rgba(14,165,233,0.2)]';
     case 'Agentic AI':
       return 'bg-[rgba(45,212,191,0.1)] text-[var(--accent)] border-[rgba(45,212,191,0.2)]';
     case 'LLM Fine-tuning':
